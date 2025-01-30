@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI HUB</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #111;
+            color: #fff;
+            text-align: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background-image: url('https://wi.wallpapertip.com/wsimgs/35-356023_artificial-intelligence-ai-safety.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            opacity: 0.9;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: -1;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: #222;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo-image {
+            width: 40px;
+            height: 40px;
+        }
+
+        .logo-text {
+            font-size: 24px;
+            font-weight: bold;
+            color: #4db8ff;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            position: relative;
+            margin: 0 15px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 15px;
+            display: block;
+        }
+
+        nav a:hover {
+            background-color: #4db8ff;
+        }
+
+        .dropdown-content, .submenu {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width: 180px;
+            border-radius: 5px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+            text-align: left;
+        }
+
+        .submenu {
+            left: 100%;
+            top: 0;
+            background-color: #444;
+        }
+
+        .dropdown:hover .dropdown-content,
+        .dropdown-content li:hover .submenu {
+            display: block;
+        }
+
+        footer {
+            background-color: #222;
+            padding: 1.25px;
+            font-size: 2px;
+            text-align: center;
+            width: 100%;
+            margin-top: auto;
+        }
+
+        /* Content Styles */
+        .content {
+            max-width: 900px;
+            margin: auto;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .features-list {
+            list-style-type: none;
+            padding: 0;
+            text-align: left;
+        }
+
+        .github-link {
+            color: #4db8ff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="https://avatars.githubusercontent.com/u/196462889?s=200&v=4" alt="AI HUB Logo" class="logo-image">
+            <div class="logo-text">AI HUB @ VVIT</div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li class="dropdown">
+                    <a href="#">Training ▼</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Life Skills</a></li>
+                        <li>
+                            <a href="#">ADSA ▶</a>
+                            <ul class="submenu">
+                                <li><a href="#">A</a></li>
+                                <li><a href="#">B</a></li>
+                                <li><a href="#">C</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">AI</a></li>
+                    </ul>
+                </li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#leaderboard">Leader Board</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="content">
+        <p>
+            AI HUB @ VVIT is a dedicated platform to foster Artificial Intelligence learning, training, 
+            and innovation. Whether you are a beginner or an advanced AI enthusiast, this hub provides 
+            training sessions, blogs, and leaderboards to track progress and achievements.
+        </p>
+
+        <h2>What We Offer</h2>
+        <ul class="features-list">
+            <li>✅ Hands-on **Training Sessions** in AI, Data Science, and Advanced Algorithms.</li>
+            <li>✅ Workshops on **Real-world AI Applications** and Problem Solving.</li>
+            <li>✅ Blogs and Articles to stay updated with **AI Trends & Innovations**.</li>
+            <li>✅ **Competitions & Hackathons** to challenge your skills and grow.</li>
+            <li>✅ AI-based **Projects & Research Collaborations**.</li>
+            <li>✅ An exclusive **Leaderboard** to track progress and recognize top performers.</li>
+        </ul>
+
+        <h2>Why Join AI HUB?</h2>
+        <p>
+            Whether you are a beginner curious about AI or an advanced learner aiming to build 
+            groundbreaking projects, AI HUB @ VVIT provides the right environment to **learn, build, 
+            and grow**.
+        </p>
+
+        <h2>🎓 Career Development</h2>
+        <p>
+            AI HUB is more than just a learning center—it's a **launchpad for your career in AI**.  
+            Members gain exposure to **internship opportunities, AI certifications, and industry connections**.
+        </p>
+
+        <h2>📢 Get Involved!</h2>
+        <p>
+            Ready to **explore the future with AI**? Join our growing community and contribute to 
+            cutting-edge projects. Follow our <a href="https://github.com/AIHUB-VVIT" target="_blank" class="github-link">GitHub</a> 
+            for updates!
+        </p>
+    </div>
+
+    <footer>
+        <p>
+            <span id="currentYear"></span>
+            <a href="https://github.com/AIHUB-VVIT" target="_blank">
+                <img src="https://i.pinimg.com/originals/ac/b3/51/acb3513e5a2664ba59bec11222863a40.jpg" width="45" height="45">
+            </a>
+        </p>
+    </footer>
+
+    <script>
+        let lastScrollTop = 0;
+        const header = document.getElementById('header');
+        const footer = document.getElementById('footer');
+
+        window.addEventListener('scroll', function() {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (scrollTop > lastScrollTop) {
+                header.style.top = '-100px';
+                footer.style.bottom = '-100px';
+            } else {
+                header.style.top = '0';
+                footer.style.bottom = '0';
+            }
+
+            lastScrollTop = scrollTop;
+        });
+    </script>
+</body>
+</html>
